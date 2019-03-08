@@ -1,28 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * HomePage
+ *
+ * This is the first thing users see of our App, at the '/' route
+ */
 
-class App extends Component {
+import React, { Fragment } from 'react'
+import { Helmet } from 'react-helmet'
+import {
+  Menu,
+  Layout
+} from 'antd'
+import { Switch, Route, Link, withRouter } from 'react-router-dom'
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import HomePage from 'containers/HomePage'
+import 'antd/dist/antd.css';
+import './App.css'
+const SubMenu = Menu.SubMenu
+export default class App extends React.PureComponent {
+  handleClick = e => {
+    this.setState({
+      current: e.key,
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <Fragment>
+        <article>
+          <Helmet>
+            <title>Event Predictor</title>
+            <meta name="description" content="Event Predictor" />
+          </Helmet>
+        </article>
+        <Header
+          className="header"
+        />
+        <Layout.Content className="app-layout-content">
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+          </Switch>
+        </Layout.Content>
+        <Footer />
+      </Fragment>
+    )
   }
 }
-
-export default App;

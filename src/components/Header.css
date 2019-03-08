@@ -1,0 +1,130 @@
+.logo {
+    width: 31px;
+    height: 35px;
+    background-image: url('') !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    background-size: 100% !important;
+    /* margin: 10px 24px 10px 0; */
+    margin: 13px 0 16px 0 !important;
+    float: left;
+  }
+  .logo-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+  
+  .trigger:hover {
+    color: #1890ff;
+  }
+  
+  .header {
+    /* background: rgba(255,255,255,0.9); */
+    height: 57px;
+    z-index: 100;
+  }
+  .header-children {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu {
+    background-color: transparent;
+    line-height: 57px;
+    padding: 5px auto;
+  }
+  .ant-menu-horizontal {
+    border-bottom: none;
+  }
+  .mobile-menu {
+    background-color: transparent;
+    line-height: 50px;
+    padding: 5px auto;
+    display: none;
+  }
+  @media only screen and (max-width: 700px) {
+    .header-menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: flex;
+      max-widtH: 200px;
+    }
+    .logo {
+      width: 80px;
+      margin: 0;
+      float: none;
+    }
+    .header {
+      display: flex;
+    }
+  }
+  
+  
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  

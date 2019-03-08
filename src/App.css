@@ -1,33 +1,129 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Karla|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  /* font-family: 'Karla', sans-serif; */
+  color: #323232;
+  font-family: Montserrat, Arial, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+label, body, div, h1, h2, h3, p, a, button {
+  font-family: 'Abel', sans-serif !important;
+}
+.gutter-box {
+  background: #00A0E9;
+  padding: 5px 0;
+}
+.ant-carousel .slick-slide {
   text-align: center;
+  height: 350px;
+  line-height: 350px;
+  background: #364d79;
+  overflow: hidden;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.ant-card-bordered {
+  border: none !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-carousel .slick-slide h3 {
+  color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-card-head {
+  height: 25px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+}
+.app-layout-content {
+  background: "#fff";
+  /* padding: 24px; */
+  margin: 0;
+  /* min-height: calc(100%) */
+}
+.ant-layout-header {
+  background: none;
+}
+@media only screen and (max-width: 600px) {
+  .app-layout-content {
+    padding: 0px;
+    margin: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .trigger {
+    padding: 0;
+  }
+  .ant-layout-header {
+    padding: 0;
+  }
+  p {
+    font-size: 1em !important;
+  }
+  .section-introduction {
+    padding: 10px 0 !important;
+  }
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	font: 14px "Abel", sans-serif;
+	line-height: 18px;
+	font-weight: normal;
+	position: relative;
+	/* height: 100%; */
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+label, body, div, h1, h2, h3, p, a, button {
+  font-family: 'Abel', sans-serif;
+}
+.homepage-gallery {
+  background: #fafafa;
+  padding: 30px;
+}
+.section-introduction {
+  background: #fafafa;
+  padding: 30px;
+}
+.section-portfolio {
+  background: #fafafa;
+  padding: 30px;
+}
+.jumbotron-left-text {
+  padding: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .homepage-gallery, .section-introduction, .section-portfolio, {
+    padding: 0px;
+    margin: 0px;
   }
 }
